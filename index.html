@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Generate Your Customized QR Code</h1>
+
+    <div class="container">
+        <!-- Left Side: QR Form -->
+        <div class="form-container">
+            <form id="qrForm">
+                <input type="text" name="data" placeholder="Enter the URL" required>
+                <label>Foreground Color: <input type="color" name="color" value="#000000"></label>
+                <label>Background Color: <input type="color" name="bgcolor" value="#ffffff"></label>
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+
+        <!-- Right Side: QR Code Display -->
+        <div class="qr-output">
+            <div id="qrCodeContainer"></div>
+            <a id="downloadBtn" style="display:none;">
+                <button>Download QR Code</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
